@@ -1,0 +1,10 @@
+The following CSS code snippet demonstrates an uncommon error related to the usage of the `calc()` function: 
+
+```css
+.element {
+  width: calc(100% - 10px);
+  height: calc(100vh - 20px); 
+}
+```
+
+The issue lies in the units used within the `calc()` function. While `100%` is a valid unit for width and `100vh` is a valid unit for height, using `px` as the unit for subtraction causes a conflict when the calculation involves a percentage. This can lead to unexpected behavior, inconsistent layout, or rendering errors in various browsers or situations.
